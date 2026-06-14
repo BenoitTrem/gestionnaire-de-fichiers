@@ -70,3 +70,15 @@ Une fois le serveur démarré, ouvrez votre navigateur et accédez à :
 ```
 http://localhost:8080/vues/index.html
 ```
+
+---
+
+## Comptes de test
+
+La base de données est automatiquement peuplée au premier démarrage avec les comptes suivants :
+
+| Nom d'utilisateur | Courriel          | Mot de passe  | Rôle       |
+|-------------------|-------------------|---------------|------------|
+| bob               | bob@gmail.com     | password123   | Utilisateur |
+| anna              | anna@gmail.com    | password123   | Utilisateur |
+| Admin             | admin@gmail.com   | password123   | Admin      |
