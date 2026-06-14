@@ -1,0 +1,404 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.background{
+    background-color: #495057;
+}
+
+.bold-outline-btn {
+    font-weight: bold;
+    border-width: 2px;
+}
+
+#boutonModifier:hover {
+    color: white;
+}
+
+#CompteButton:hover{
+    color: white;
+}
+
+
+#profil .img-fluid {
+    border: 2px solid black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+#profil .img-fluid:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.8);
+    transform: scale(1.01);
+}
+
+h2{
+    color:white;
+}
+
+
+.table td, .table th {
+    vertical-align: middle;
+    padding: 12px 15px;
+
+}
+
+.table img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.table img:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+.table .btn {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    border-width: 2px;
+    padding: 6px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.table .btn-outline-primary {
+    border-radius: 50px;
+    border-color: #007bff;
+    color: #007bff;
+    background-color: transparent;
+}
+
+.table .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+.menu_links {
+    font-weight: bold;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    padding-bottom: 4px;
+    border-radius: 50px;
+}
+
+.menu_links:hover {
+    color: black;
+    border-color: white;
+    border-radius: 50px;
+}
+
+.menu_links:focus {
+    outline: none;
+    border-radius: 50px;
+}
+
+.navbar-nav .nav-item .btn.active,
+.navbar-nav .nav-item .btn:active {
+    border-radius: 50px;
+    border-color: white;
+    padding: 8px 18px;
+    box-shadow: none;
+}
+
+#bouton_gere_utilisateur,
+#bouton_commetaire_indiserable,
+#bouton_mes_fichiers,
+#bouton_accueil{
+    border-bottom: 2px solid white;
+    padding-bottom: 6px;
+}
+
+#bouton_gere_utilisateur:hover,
+#bouton_commetaire_indiserable:hover,
+#bouton_mes_fichiers:hover,
+#bouton_accueil:hover{
+    border-color: white;
+    border-radius: 50px;
+}
+
+.navbar-nav .nav-item .btn.active {
+    border-bottom: none;
+    border-radius: 50px;
+    border-color: white;
+    box-shadow: none;
+}
+
+
+.container {
+    flex-grow: 1;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+#footerText {
+    font-size: 16px;
+}
+
+.text-blanc{
+    color:white;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table:hover{
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+.comment-text {
+    display: block;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+
+.comment-text .more-btn {
+    color: #007bff;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.comment-text:hover {
+    white-space: normal;
+    overflow: visible;
+}
+
+
+.bold-outline-btn-commentaire {
+    max-width: 300px;
+    font-weight: bold;
+    border-width: 2px;
+}
+
+.commentaire{
+    width: 70%;
+}
+.modal-body {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.container_ {
+    border: 1px solid black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.container_:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+.btn-outline-green {
+    border-radius: 50px;
+    border: 2px solid #28a745;
+    color: #28a745;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 6px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-green:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-commentaire {
+    border-radius: 50px;
+    border: 2px solid #28a745;
+    color: #28a745;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 6px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-commentaire:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-telecharger {
+    border-radius: 50px;
+    border: 2px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 6px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-telecharger:hover {
+    background-color: #007bff;
+    color: white;
+}
+.btn-publier {
+    border-radius: 50px;
+    border: 2px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 6px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-publier:hover {
+    background-color: #007bff;
+    color: white;
+}
+.comment-input .form-label,
+.comment-input textarea,
+.comment-input .btn-publier {
+    padding-left: 0;
+}
+
+.btn-publier {
+    display: inline-block;
+}
+
+.btn-signaler {
+    border-radius: 50px;
+    border: 2px solid red;
+    color: red;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 6px 15px !important;
+    font-size: 0.9rem !important;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-signaler:hover {
+    background-color: red;
+    color: white;
+}
+
+.modal-xl {
+    max-width: 95%;
+}
+.modal-body {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 1rem 2rem;
+}
+.commentaire-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.commentaire-item:hover {
+    background-color: #e9ecef;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.8);
+}
+
+.commentaire-item p {
+    margin: 0;
+    padding-left: 0;
+}
+
+.signal-btn {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+}
+
+.commentaire-item .signal-btn {
+    align-self: flex-start;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+}
+textarea {
+    resize: none;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+#commentsModal-${fichier.idfichier} .btn-primary {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+}
+
+.comment-input {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+    gap: 0;
+}
+
+.comment-input .form-label {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.comment-input textarea {
+    width: 100%;
+    margin: 0;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    line-height: 1.3;
+    resize: none;
+}
+
+.comment-input .btn-publier {
+    margin: 0;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+
+

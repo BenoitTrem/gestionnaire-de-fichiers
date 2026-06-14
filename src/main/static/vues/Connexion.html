@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../CSS/style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 background">
+<div id="navbarContainer"></div>
+
+<div id="messageBox" class="alert alert-info d-none text-center" role="alert"></div>
+
+
+<div class="container flex-grow-1 d-flex justify-content-center align-items-center">
+  <div class="col-md-6 col-lg-5">
+    <div class="card p-4 container_">
+      <h3 class="text-center mb-4">Connexion</h3>
+      <form id="FormConnexion">
+        <div id="loginError" class="text-danger mb-2"></div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Adresse courriel</label>
+          <input type="email" class="form-control" id="email" placeholder="Entrez votre courriel" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe" required>
+        </div>
+        <div class="d-flex justify-content-end mb-5">
+          <a href="MotDePasseOublie.html" >Mot de passe oublié?</a>
+        </div>
+        <button type="submit" class="btn btn-outline-primary rounded-pill px-4 py-2 w-100 mb-2 bold-outline-btn">Connexion</button>
+      </form>
+
+      <hr>
+      <p class="text-center mt-3">Pas de compte? <a href="Inscription.html">Inscrivez-vous</a></p>
+    </div>
+  </div>
+</div>
+<div id="footerContainer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/connexion.js"></script>
+
+<script>
+  fetch("NavBar.html")
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById("navbarContainer").innerHTML = html;
+            const script = document.createElement("script");
+            script.src = "../js/NavBar.js";
+            document.body.appendChild(script);
+          })
+          .catch(err => console.error("Erreur:", err));
+  fetch("Footer.html")
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById("footerContainer").innerHTML = html;
+            const script = document.createElement("script");
+            script.src = "../js/footer.js";
+            document.body.appendChild(script);
+          })
+          .catch(err => console.error("Erreur:", err));
+</script>
+
+<script>
+  window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const message = urlParams.get('message');
+    const messageBox = document.getElementById('messageBox');
+
+    if (message === 'deconnecte') {
+      messageBox.textContent = 'Vous êtes déconnecté avec succès!';
+      messageBox.classList.remove('d-none');
+    } else if (message === 'compte_cree') {
+      messageBox.textContent = 'Inscription réussie! Veuillez vérifier votre e-mail pour confirmer votre compte.';
+      messageBox.classList.remove('d-none');
+    } else if (message === 'supressionCompte') {
+      messageBox.textContent = 'Compte supprimé avec succès.';
+      messageBox.classList.remove('d-none');
+    }
+  };
+</script>
+
+</body>
+</html>
